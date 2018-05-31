@@ -5,7 +5,7 @@
     </div>
     <div class="uploader" @click="upload()" v-if="user && user.role === 'editor'">
       <md-icon class="icon md-size-2x">cloud_upload</md-icon>
-      <md-tooltip md-direction="bottom">You can drag an image or images here to upload</md-tooltip>
+      <md-tooltip md-direction="bottom">Click to upload, or simply drag and drop your image(s)</md-tooltip>
     </div>
     <md-progress-bar class="md-accent progress" md-mode="indeterminate" v-show="loading"></md-progress-bar>
   </div>

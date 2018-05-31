@@ -15,8 +15,7 @@
     "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1",
     "vue-visible": "^1.0.2",
-    "vuex": "^3.0.1",
-    "yargs": "^11.0.0"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.14",
@@ -36,7 +35,8 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16",
-    "winston": "^2.4.2"
+    "winston": "^2.4.2",
+    "yargs": "^11.0.0"
   },
   "browserslist": [
     "> 1%",

@@ -24,7 +24,9 @@ export default new Vuex.Store({
       state.loading = payload
     },
     ERROR: (state, payload) => {
+      /* eslint-disable no-console */
       if (state.debug) console.error(payload)
+      /* eslint-enable no-console */
       state.error = payload instanceof Error ? payload.message : payload
       setTimeout(() => {
         state.error = null
