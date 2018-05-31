@@ -22,3 +22,11 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# config
+/config/*
+!/config/default.js
+
+# logs
+/logs/*
+!/logs/.keep

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "NODE_ENV=development vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
@@ -12,8 +12,11 @@
   "dependencies": {
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
+    "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vue-visible": "^1.0.2",
+    "vuex": "^3.0.1",
+    "yargs": "^11.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.14",
@@ -24,11 +27,16 @@
     "@vue/cli-service": "^3.0.0-beta.14",
     "@vue/eslint-config-standard": "^3.0.0-beta.14",
     "@vue/test-utils": "^1.0.0-beta.16",
+    "aws-sdk": "^2.248.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^22.4.3",
+    "bluebird": "^3.5.1",
+    "config": "^1.30.0",
+    "inquirer": "^5.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "winston": "^2.4.2"
   },
   "browserslist": [
     "> 1%",
