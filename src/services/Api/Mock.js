@@ -1,8 +1,8 @@
 import Base from './Base'
 
 class Mock extends Base {
-  constructor () {
-    super()
+  constructor (securityType, globalAuthToken) {
+    super(securityType, globalAuthToken)
     this.validToken = process.env.VUE_APP_GLOBAL_AUTH_TOKEN
     this.mockTime = 1000
   }

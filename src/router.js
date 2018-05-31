@@ -11,6 +11,9 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login,
+      props: {
+        title: process.env.VUE_APP_TITLE
+      },
       meta: {
         protected: false
       }

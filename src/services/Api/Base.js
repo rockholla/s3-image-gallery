@@ -1,6 +1,7 @@
 class Base {
-  constructor () {
-    this.initialized = false
+  constructor (securityType, globalAuthToken) {
+    this.securityType = securityType
+    this.globalAuthToken = globalAuthToken
     this.init()
   }
 
@@ -9,19 +10,19 @@ class Base {
     if (storedUser !== null) {
       this.setUser(storedUser, false)
     } else {
-      switch (process.env.VUE_APP_SECURITY_TYPE) {
+      switch (this.securityType) {
         case 'public-read-write':
           this.setUser({
             username: 'editor-anonymous',
             role: 'editor',
-            token: process.env.VUE_APP_GLOBAL_AUTH_TOKEN
+            token: this.globalAuthToken
           })
           break
         case 'public-read':
           this.setUser({
             username: 'viewer-anonymous',
             role: 'viewer',
-            token: process.env.VUE_APP_GLOBAL_AUTH_TOKEN
+            token: this.globalAuthToken
           })
           break
         default:
@@ -29,7 +30,6 @@ class Base {
           this.setUser(null, false)
       }
     }
-    this.initialized = true
   }
 
   getStoredUser () {

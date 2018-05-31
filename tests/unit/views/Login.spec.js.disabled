@@ -1,0 +1,12 @@
+import { shallowMount } from '@vue/test-utils'
+import Login from '@/views/Login.vue'
+
+describe('Login.vue', () => {
+  it('renders title when passed as a prop', () => {
+    const title = 'Another title'
+    const wrapper = shallowMount(Login, {
+      propsData: { title }
+    })
+    expect(wrapper.text()).toMatch(title)
+  })
+})

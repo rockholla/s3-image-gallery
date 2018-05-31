@@ -3,6 +3,7 @@
     <md-snackbar md-position="center" :md-active="error !== null" md-persistent>
       <span>{{ error }}</span>
     </md-snackbar>
+    <h2 v-if="title">{{ title }}</h2>
     <form novalidate class="md-layout md-alignment-center">
       <md-card class="md-layout-item md-size-30 md-small-size-45 md-xsmall-size-65 form-card">
         <md-progress-bar md-mode="indeterminate" v-visible="loading" />
@@ -28,6 +29,9 @@ import api from '@/services/Api'
 
 export default {
   name: 'Login',
+  props: {
+    title: String
+  },
   computed: {
     loading () {
       return this.$store.getters.loading
