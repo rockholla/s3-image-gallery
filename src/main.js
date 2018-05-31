@@ -18,8 +18,6 @@ Vue.directive('focus', {
   }
 })
 
-console.log(process.env)
-
 if (api.user !== null) {
   store.dispatch('setUser', api.user)
 }
