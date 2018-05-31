@@ -1,6 +1,6 @@
 {
-  "name": "vue-s3-image-gallery",
-  "short_name": "vue-s3-image-gallery",
+  "name": "s3-image-gallery",
+  "short_name": "s3-image-gallery",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
