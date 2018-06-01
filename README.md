@@ -1,4 +1,4 @@
-![S3I](public/img/icons/apple-touch-icon-76x76.png) <span style="font-size:25px;margin-left:0.5em;">S3 Image Gallery</span>
+## ![S3I](public/img/icons/apple-touch-icon-76x76.png) S3 Image Gallery
 
 _A super-simple serverless image gallery deployed inside AWS_
 
