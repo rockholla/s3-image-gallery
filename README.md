@@ -1,6 +1,6 @@
-# S3 Image Gallery
-
 ![S3I](public/img/icons/apple-touch-icon-76x76.png)
+
+# S3 Image Gallery
 
 _A super-simple serverless image gallery deployed inside AWS_
 
