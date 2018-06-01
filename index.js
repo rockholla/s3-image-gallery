@@ -1,6 +1,7 @@
-const aws       = require('aws-sdk');
 const config    = require('config');
 const winston   = require('winston');
+const fs        = require('fs');
+const path      = require('path');
 
 const initWinstonLoggers = function () {
   winston.remove(winston.transports.Console);
@@ -50,6 +51,13 @@ const argv = yargs
     if (argv.debug) {
       config.log.level = "debug";
       initWinstonLoggers();
+    }
+    if (argv._ != 'use') {
+      if (fs.existsSync(path.resolve(__dirname, 'config', 'local.js'))) {
+        winston.info('Using config: ' + fs.realpathSync(path.resolve(__dirname, 'config', 'local.js')).split(path.sep).pop())
+      } else {
+        winston.warn('Using the default configuration only');
+      }
     }
     return true;
   })

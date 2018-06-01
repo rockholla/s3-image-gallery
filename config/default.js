@@ -51,4 +51,4 @@ module.exports = {
     file: false,
     console: true,
   },
-};
+}
