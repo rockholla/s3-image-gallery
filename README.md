@@ -1,4 +1,4 @@
-## S3 Image Gallery
+# S3 Image Gallery
 
 ![S3I](public/img/icons/apple-touch-icon-76x76.png)
 
